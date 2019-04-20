@@ -5,6 +5,8 @@ public class Jugador{
 	//lista de pokemones
 	//lista de pociones
 
+	//falta constructor
+
 	public void guardarPokemon(){
 		
 	}
