@@ -15,8 +15,8 @@ public class Jugador{
 		int indice= checaIndice(poke.getNombre());
 		listaPokemones.set(indice,poke);
 	}
-	public Pokemon elegirPokemon(Pokemon poke){
-		int indice= checaIndice(poke.getNombre());
+	public Pokemon elegirPokemon(Int indice){
+		
 		return listaPokemones.get(indice);
 	}
 	public void usarPocion(){
@@ -25,8 +25,8 @@ public class Jugador{
 		//eliminar pocion de la lista
 	}
 	public void listarPokemon(){
-		for(Pokemon poke : listaPokemones ){
-			System.out.println(poke.getNombre()+"  Vida: "+poke.getVida()+"   Estado: "+poke.getEstado());
+		for(int i=0; i<=listaPokemones.size()-1 ; i++){
+			System.out.println(i+" -> "+poke.getNombre()+"  Vida: "+poke.getVida()+"   Estado: "+poke.getEstado());
 		}
 	}
 
